@@ -1,0 +1,2391 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/deepsua_bot_logo_transparente.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Handlers - DEEPSUA TELEGRAM BOT - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CHack:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Hack"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deepsua-bot-handlers" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="DEEPSUA TELEGRAM BOT - Documentación" class="md-header__button md-logo" aria-label="DEEPSUA TELEGRAM BOT - Documentación" data-md-component="logo">
+      
+  <img src="../../assets/images/deepsua_bot_logo_transparente.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DEEPSUA TELEGRAM BOT - Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Handlers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DEEPSUA TELEGRAM BOT - Documentación" class="md-nav__button md-logo" aria-label="DEEPSUA TELEGRAM BOT - Documentación" data-md-component="logo">
+      
+  <img src="../../assets/images/deepsua_bot_logo_transparente.png" alt="logo">
+
+    </a>
+    DEEPSUA TELEGRAM BOT - Documentación
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          DEEPSUA Bot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="DEEPSUA Bot" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          DEEPSUA Bot
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Bot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Handlers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Handlers
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deepsua-bot-handlers" class="md-nav__link">
+    DEEPSUA Bot - Handlers
+  </a>
+  
+    <nav class="md-nav" aria-label="DEEPSUA Bot - Handlers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    Start
+  </a>
+  
+    <nav class="md-nav" aria-label="Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.start_handler" class="md-nav__link">
+    start_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-commandhandler" class="md-nav__link">
+    Comandos tipo: CommandHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: CommandHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.comisiones_handler" class="md-nav__link">
+    comisiones_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.fingerrules_handler" class="md-nav__link">
+    fingerrules_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcoordinadores_old_handler" class="md-nav__link">
+    llamarcoordinadores_old_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.redessociales_handler" class="md-nav__link">
+    redessociales_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.addadmin_handler" class="md-nav__link">
+    addadmin_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.vercomisiones_handler" class="md-nav__link">
+    vercomisiones_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-messagehandler" class="md-nav__link">
+    Comandos tipo: MessageHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: MessageHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.deepsua_frases_handler" class="md-nav__link">
+    deepsua_frases_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-callbackqueryhandler" class="md-nav__link">
+    Comandos tipo: CallbackQueryHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: CallbackQueryHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comando-borramedecomision" class="md-nav__link">
+    Comando /borramedecomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.borramedecomision_handler" class="md-nav__link">
+    borramedecomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.borramedecomision_callback" class="md-nav__link">
+    borramedecomision_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-coordinadores" class="md-nav__link">
+    Comando /coordinadores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.coordinadores_handler" class="md-nav__link">
+    coordinadores_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.coordinadores_callback" class="md-nav__link">
+    coordinadores_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-inscribeme" class="md-nav__link">
+    Comando /inscribeme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.inscribeme_handler" class="md-nav__link">
+    inscribeme_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.inscribeme_callback" class="md-nav__link">
+    inscribeme_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-llamarcomision" class="md-nav__link">
+    Comando /llamarcomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcomision_handler" class="md-nav__link">
+    llamarcomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcomision_callback" class="md-nav__link">
+    llamarcomision_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-nuevapublicacion" class="md-nav__link">
+    Comando /nuevapublicacion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_handler" class="md-nav__link">
+    nuevapublicacion_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_callback" class="md-nav__link">
+    nuevapublicacion_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_twitter_callback" class="md-nav__link">
+    nuevapublicacion_twitter_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_instagram_callback" class="md-nav__link">
+    nuevapublicacion_instagram_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_todas_callback" class="md-nav__link">
+    nuevapublicacion_todas_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-verusuarioscomision" class="md-nav__link">
+    Comando /verusuarioscomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.verusuarioscomision_handler" class="md-nav__link">
+    verusuarioscomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.verusuarioscomision_callback" class="md-nav__link">
+    verusuarioscomision_callback()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deepsua-bot-handlers" class="md-nav__link">
+    DEEPSUA Bot - Handlers
+  </a>
+  
+    <nav class="md-nav" aria-label="DEEPSUA Bot - Handlers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    Start
+  </a>
+  
+    <nav class="md-nav" aria-label="Start">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.start_handler" class="md-nav__link">
+    start_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-commandhandler" class="md-nav__link">
+    Comandos tipo: CommandHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: CommandHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.comisiones_handler" class="md-nav__link">
+    comisiones_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.fingerrules_handler" class="md-nav__link">
+    fingerrules_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcoordinadores_old_handler" class="md-nav__link">
+    llamarcoordinadores_old_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.redessociales_handler" class="md-nav__link">
+    redessociales_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.addadmin_handler" class="md-nav__link">
+    addadmin_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.vercomisiones_handler" class="md-nav__link">
+    vercomisiones_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-messagehandler" class="md-nav__link">
+    Comandos tipo: MessageHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: MessageHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.deepsua_frases_handler" class="md-nav__link">
+    deepsua_frases_handler()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comandos-tipo-callbackqueryhandler" class="md-nav__link">
+    Comandos tipo: CallbackQueryHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos tipo: CallbackQueryHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comando-borramedecomision" class="md-nav__link">
+    Comando /borramedecomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.borramedecomision_handler" class="md-nav__link">
+    borramedecomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.borramedecomision_callback" class="md-nav__link">
+    borramedecomision_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-coordinadores" class="md-nav__link">
+    Comando /coordinadores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.coordinadores_handler" class="md-nav__link">
+    coordinadores_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.coordinadores_callback" class="md-nav__link">
+    coordinadores_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-inscribeme" class="md-nav__link">
+    Comando /inscribeme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.inscribeme_handler" class="md-nav__link">
+    inscribeme_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.inscribeme_callback" class="md-nav__link">
+    inscribeme_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-llamarcomision" class="md-nav__link">
+    Comando /llamarcomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcomision_handler" class="md-nav__link">
+    llamarcomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.llamarcomision_callback" class="md-nav__link">
+    llamarcomision_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-nuevapublicacion" class="md-nav__link">
+    Comando /nuevapublicacion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_handler" class="md-nav__link">
+    nuevapublicacion_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_callback" class="md-nav__link">
+    nuevapublicacion_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_twitter_callback" class="md-nav__link">
+    nuevapublicacion_twitter_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_instagram_callback" class="md-nav__link">
+    nuevapublicacion_instagram_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.nuevapublicacion_todas_callback" class="md-nav__link">
+    nuevapublicacion_todas_callback()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comando-verusuarioscomision" class="md-nav__link">
+    Comando /verusuarioscomision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.verusuarioscomision_handler" class="md-nav__link">
+    verusuarioscomision_handler()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deepsua_handlers.verusuarioscomision_callback" class="md-nav__link">
+    verusuarioscomision_callback()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Handlers</h1>
+
+<h2 id="deepsua-bot-handlers">DEEPSUA Bot - Handlers<a class="headerlink" href="#deepsua-bot-handlers" title="Permanent link">&para;</a></h2>
+<p>Los handlers se encargan de gestionar los mensajes que recibe el bot. Cada comando tiene su propio handler. Los handlers se encuentran en el archivo <code>deepsua_handlers.py</code>.</p>
+<p>Cabe destacar que tenemos distintos tipos de handlers:</p>
+<ul>
+<li><code>CommandHandler</code>: Este tipo de handler se encarga de gestionar los comandos que se le envían al bot. Por ejemplo, el comando <code>/start</code> o <code>/help</code>.</li>
+<li><code>MessageHandler</code>: Este tipo de handler se encarga de gestionar los mensajes que se le envían al bot. Por ejemplo, los mensajes de texto o los mensajes de tipo <code>sticker</code>.</li>
+<li><code>CallbackQueryHandler</code>: Este tipo de handler se encarga de gestionar las respuestas a los botones de los mensajes de tipo <code>InlineKeyboardMarkup</code>.</li>
+</ul>
+<h3 id="start">Start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h3>
+<p>El comando <code>/start</code> es el comando que se ejecuta cuando un usuario inicia una conversación con el bot. Este comando se encarga de mostrar un mensaje de bienvenida al usuario.</p>
+<p>Cabe destacar que el handler de este comando es de tipo <code>CommandHandler</code>.</p>
+<p>Su handler es el siguiente:</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.start_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">start_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.start_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando envía un mensaje de bienvenida al usuario que lo lanza. Sólo funciona en el chat privado.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h3 id="comandos-tipo-commandhandler">Comandos tipo: CommandHandler<a class="headerlink" href="#comandos-tipo-commandhandler" title="Permanent link">&para;</a></h3>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.comisiones_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">comisiones_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.comisiones_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando envía al chat privado del usuario una lista con los grupos de las comisiones de la delegación.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.fingerrules_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">fingerrules_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.fingerrules_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando envía al chat el PDF de las finger rules.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.llamarcoordinadores_old_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">llamarcoordinadores_old_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.llamarcoordinadores_old_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando llama a los administradores del grupo.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.redessociales_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">redessociales_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.redessociales_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando muestra las redes sociales de la delegación de estudiantes.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.addadmin_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">addadmin_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.addadmin_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando permite a un administrador añadir un nuevo administrador al bot</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.vercomisiones_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">vercomisiones_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.vercomisiones_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Comando que devuelve las comisiones a las que el usuario citado está inscrito, esto sólo lo pueden ejecutar los administradores.
+Si el usuario no está citado, se devuelve la lista de comisiones del usuario que llama al comando.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h3 id="comandos-tipo-messagehandler">Comandos tipo: MessageHandler<a class="headerlink" href="#comandos-tipo-messagehandler" title="Permanent link">&para;</a></h3>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.deepsua_frases_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">deepsua_frases_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.deepsua_frases_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando muestra una frase de la delegación de estudiantes a modo de EasterEgg.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h3 id="comandos-tipo-callbackqueryhandler">Comandos tipo: CallbackQueryHandler<a class="headerlink" href="#comandos-tipo-callbackqueryhandler" title="Permanent link">&para;</a></h3>
+<p>Este tipo de handler tiene dos partes. La primera parte es el handler en sí, y la segunda parte es el callback que se ejecuta cuando se recibe una respuesta a un botón de un mensaje de tipo <code>InlineKeyboardMarkup</code>.</p>
+<h4 id="comando-borramedecomision">Comando /borramedecomision<a class="headerlink" href="#comando-borramedecomision" title="Permanent link">&para;</a></h4>
+<p>Este comando se encarga de borrar al usuario de la comisión que indique mediante un menú de botones.</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.borramedecomision_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">borramedecomision_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.borramedecomision_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando permite a los usuarios borrar su nombre de la lista de una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.borramedecomision_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">borramedecomision_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.borramedecomision_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que borra el nombre de la lista de una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h4 id="comando-coordinadores">Comando /coordinadores<a class="headerlink" href="#comando-coordinadores" title="Permanent link">&para;</a></h4>
+<p>Este comando se encarga de mostrar un mensaje con los coordinadores de cada comisión. Este mensaje abre un menú que nos permite llamar a los Coordinadores de Grado, los Coordinadores de Comisiones, a la Directiva de la Delegación o a todos.</p>
+<p>Veamos sus handlers:</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.coordinadores_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">coordinadores_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.coordinadores_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando lista las opciones disponibles para llamar a los miembros y miembras de la Delegación.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.coordinadores_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">coordinadores_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.coordinadores_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Este comando se encarga de llamar a los miembros y miembras de la Delegación.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h4 id="comando-inscribeme">Comando /inscribeme<a class="headerlink" href="#comando-inscribeme" title="Permanent link">&para;</a></h4>
+<p>Este comando se encarga de inscribir al usuario en la comisión que indique mediante un menú de botones.</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.inscribeme_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">inscribeme_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.inscribeme_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Comando que inicia el proceso de inscribir al usuario que lo ejecuta en una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.inscribeme_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">inscribeme_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.inscribeme_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que ejecuta la inscripción en la comisión seleccionada.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h4 id="comando-llamarcomision">Comando /llamarcomision<a class="headerlink" href="#comando-llamarcomision" title="Permanent link">&para;</a></h4>
+<p>Este comando se encarga de llamar a los miembros de la comisión que indique mediante un menú de botones.</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.llamarcomision_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">llamarcomision_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.llamarcomision_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Comando que inicia el proceso de llamar a los miembros de una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.llamarcomision_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">llamarcomision_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.llamarcomision_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que se ejecuta cuando el usuario ha elegido la comisión a la que llamar.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h4 id="comando-nuevapublicacion">Comando /nuevapublicacion<a class="headerlink" href="#comando-nuevapublicacion" title="Permanent link">&para;</a></h4>
+<p>Este comando sirve para realizar una publicación a las redes sociales de la Delegación. Este comando se encarga de pedir al usuario que introduzca el texto de la publicación. Cabe destacar que este comando solo está disponible para los administradores del bot.</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.nuevapublicacion_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">nuevapublicacion_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.nuevapublicacion_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Comando que inicia el proceso de hacer una nueva publicación en las redes sociales.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.nuevapublicacion_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">nuevapublicacion_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.nuevapublicacion_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que se ejecuta cuando se selecciona una opción del menú de selección de redes sociales.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.nuevapublicacion_twitter_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">nuevapublicacion_twitter_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.nuevapublicacion_twitter_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que se ejecuta cuando se selecciona la opción de Twitter.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.nuevapublicacion_instagram_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">nuevapublicacion_instagram_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.nuevapublicacion_instagram_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que se ejecuta cuando se selecciona la opción de Instagram.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.nuevapublicacion_todas_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">nuevapublicacion_todas_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.nuevapublicacion_todas_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que se ejecuta cuando se selecciona la opción de todas las redes sociales.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div><h4 id="comando-verusuarioscomision">Comando /verusuarioscomision<a class="headerlink" href="#comando-verusuarioscomision" title="Permanent link">&para;</a></h4>
+<p>Este comando se encarga de mostrar los usuarios que pertenecen a la comisión que indique mediante un menú de botones. Cabe destacar que este comando solo puede ser ejecutado por los administradores del bot.</p>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.verusuarioscomision_handler" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">verusuarioscomision_handler</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.verusuarioscomision_handler" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Comando que inicia el proceso de ver los usuarios de una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="deepsua_handlers.verusuarioscomision_callback" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deepsua_handlers</span><span class="o">.</span><span class="n">verusuarioscomision_callback</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span></code>
+
+<a href="#deepsua_handlers.verusuarioscomision_callback" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents first">
+  
+      <p>Callback que devuelve los usuarios de una comisión.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>update</code></td>
+          <td>
+                <code><span title="telegram.update.Update">Update</span></code>
+          </td>
+          <td><p>Update de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>context</code></td>
+          <td>
+                <code><span title="telegram.ext.callbackcontext.CallbackContext">CallbackContext</span></code>
+          </td>
+          <td><p>CallbackContext de la API de Telegram.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+<th>Name</th>        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td><code>int</code></td>          <td>
+                <code>int</code>
+          </td>
+          <td><p>Estado de la conversación.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pie" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Bot" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Bot
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
