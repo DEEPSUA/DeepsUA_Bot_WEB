@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Publish to GitHub Pages
+name: DEEPSUA_Bot -> Publish Docs
 
 on:
   # Runs on pushes targeting the default branch
